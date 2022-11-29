@@ -2,6 +2,37 @@
 //there is 5 type of inheritance
 //<!-------single inheritance---->
 
+/*#include<bits/stdc++.h>
+using namespace std;
+class car{
+    public:
+    void carname()
+    {
+        cout<<"nano";
+    }
+    void modelname()
+    {
+        cout<<"56587";
+    }
+};
+class thari:public car{
+    public:
+     void carvoice()
+     {
+        cout<<"bheeeeeeeeeeeeen";
+     }
+};
+int main()
+{
+ thari sakshi;
+ sakshi.carname();
+ cout<<endl;
+ sakshi.modelname();
+ cout<<endl;
+ sakshi.carvoice();
+ return 0;
+}*/
+
 #include<bits/stdc++.h>
 using namespace std;
 class car{
@@ -9,12 +40,7 @@ class car{
     string name;
     int modelnumber;
     string colour;
-    car( string name,int number,string colour)
-    {
-        this->name=name;
-        this->modelnumber=number;
-        this->colour=colour;
-    }
+    car();
     public:
     string getname()
     {
@@ -38,19 +64,23 @@ class car{
     }
     void setcolour(string colour)
     {
-        thi->colour=colour;
+        this->colour=colour;
     }
 };
 class thari:public car{
     public:
-
+     void carvoice()
+     {
+        cout<<"bheeeeeeeeeeeeen";
+     }
 };
 int main()
 {
- thari typee;
- typee.setname("nano");
- typee.setmodelnumber(4550);
- typee.setcolour("yellow");
- cout<<typee.getname<<" "<<typee.getmodelnumber<<" "<<typee.colour;
+ thari sakshi("nano",4550,"yellow");
+ sakshi.setname("nano");
+ sakshi.setmodelnumber(4550);
+ sakshi.setcolour("yellow");
+ cout<<sakshi.getname()<<" "<<sakshi.getmodelnumber()<<" "<<sakshi.colour;
+ sakshi.carvoice();
  return 0;
 }
